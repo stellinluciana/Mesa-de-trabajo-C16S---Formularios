@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Añadir Super - TDW</title>
+</head>
+<body class="body-formulario">
+
+<header class="header-main">
+    <div class="descuentos">Descuentos 20%</div>
+    <div class="header-nav-container">
+        <div class="logoContainer">
+            <h1>Nombre Tienda</h1>
+        </div>
+        <nav class="nav-bar">
+            <a href="index.html">Contacto</a>
+            <a href="index.html">Registrarme</a>
+            <a href="index.html">Ingresar</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main-container">
+    <section class="form-card">
+        <h2>Añadí tu super!</h2>
+        <p class="subtitle">Agregá tu personaje favorito completando las opciones.</p>
+
+        <form action="#" method="POST" ></form>
+            <div class="form-grid">
+                <!-- Columna Izquierda -->
+                <div class="col-form">
+                    <div class="form-group">
+                        <label for="nombre">*Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" rows="7" placeholder="Descripción"></textarea>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div class="col-form">
+                    <div class="form-group">
+                        <label for="especie">*Especie</label>
+                        <select id="especie" name="especie" required>
+                            <option value="" disabled selected>Especie</option>
+                            <option value="humano">Humano</option>
+                            <option value="alienigena">Alienígena</option>
+                            <option value="metahumano">Metahumano</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foto">Agregar Foto</label>
+                        <input type="file" id="foto" name="foto">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="group-title">Poderes</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="poderes[]" value="volar"> Volar</label>
+                            <label><input type="checkbox" name="poderes[]" value="superinteligencia"> Superinteligencia</label>
+                            <label><input type="checkbox" name="poderes[]" value="rayo-laser"> Vista de rayo láser</label>
+                            <label><input type="checkbox" name="poderes[]" value="billetera-gorda"> Billetera gorda</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="group-title">Tipo de personaje</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="tipo" value="heroe" checked> Héroe / Heroína</label>
+                            <label><input type="radio" name="tipo" value="villano"> Villano / Villana</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn-submit">Añadir</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    Todos los derechos reservados a TDW
+</footer>
+
+</body>
+</html>
